@@ -8,7 +8,7 @@ const MyNav = () => {
     <>
       <Navbar bg="dark" data-bs-theme="dark">
         <Container>
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+          <Navbar.Brand href="#home">State Bank of Pakistan </Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#features">Features</Nav.Link>
@@ -19,7 +19,7 @@ const MyNav = () => {
       <br />
       <Navbar bg="primary" data-bs-theme="dark">
         <Container>
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+          <Navbar.Brand href="#home">Jamshaid Aziz </Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#features">Features</Nav.Link>
@@ -31,14 +31,16 @@ const MyNav = () => {
       <br />
       <Navbar bg="light" data-bs-theme="light">
         <Container>
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+          <Navbar.Brand href="#home">Navbar of Bank </Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#features">Features</Nav.Link>
-            <Button className="btn btn-primary mx-4">
-              {" "}
-              Your Balance: ${amount}
-            </Button>
+            <div>
+              <Button disabled={true} className="btn btn-primary mx-4">
+                {" "}
+                Your Balance: ${amount}
+              </Button>
+            </div>
           </Nav>
         </Container>
       </Navbar>
